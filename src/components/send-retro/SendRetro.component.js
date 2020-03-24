@@ -17,6 +17,14 @@ export default class SendRetroComponent extends React.Component {
             marginBottom: "1%"
         }
 
+        const emojiGroup = {
+            marginTop: "5%"
+        }
+
+        const emojiStyle = {
+            fontSize: 22
+        }
+
         const sendButtonStyle = {
             fontFamily: "Pacifico",
             margin: "0 auto",
@@ -63,10 +71,24 @@ export default class SendRetroComponent extends React.Component {
 
                         <textarea className="form-control" rows="5" placeholder="Message"/>
 
+                        <div className="col">
+                            <div className="btn-group" role="group" aria-label="" style={emojiGroup}>
+                                <button type="button" className="btn btn-light">
+                                    <span role="img" style={emojiStyle} aria-label="">😃</span>
+                                </button>
+                                <button type="button" className="btn btn-light">
+                                    <span role="img" style={emojiStyle} aria-label="">🙁</span>
+                                </button>
+                                <button type="button" className="btn btn-light">
+                                    <span role="img" style={emojiStyle} aria-label="">😠</span>
+                                </button>
+                            </div>
+                        </div>
+
                         <button type="button" className="btn btn-light" style={sendButtonStyle}>Send</button>
                     </form>
                 </div>
             </div>
-    );
+        );
     }
-    }
+}
