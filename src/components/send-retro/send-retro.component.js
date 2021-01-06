@@ -141,8 +141,6 @@ export default class SendRetroComponent extends React.Component {
                                 <div className="form-group">
                                     <select className="form-control" onChange={this.onTeamSelected}>
                                         <option defaultValue>Team</option>
-                                        <option>Hallel</option>
-                                        <option>Pascal</option>
                                     </select>
                                 </div>
                             </div>
